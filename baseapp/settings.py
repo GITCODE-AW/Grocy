@@ -15,10 +15,7 @@ SECRET_KEY = "django-insecure-d!_%d^93*1+%n@)88-q217oqjz2pqy)e^d%at)2&q6990pi3ut
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    'grocy-gitcode-aw.vercel.app',
-    '.now.sh',
-]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition

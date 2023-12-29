@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "Ecom_Grocy/wsgi.py",
+        "src": "baseapp/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
       },
@@ -21,7 +21,7 @@
       },
       {
         "src": "/(.*)",
-        "dest": "Ecom_Grocy/wsgi.py"
+        "dest": "baseapp/wsgi.py"
       }
     ]
   }
