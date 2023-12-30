@@ -6,7 +6,11 @@
         "use": "@vercel/python",
         "config": {
           "maxLambdaSize": "15mb",
-          "runtime": "python3.9"
+          "runtime": "python3.9",
+          "env": {
+            "MYSQLCLIENT_CFLAGS": "-I/path/to/mysqlclient/include",
+            "MYSQLCLIENT_LDFLAGS": "-L/path/to/mysqlclient/lib -lmysqlclient"
+          }
         }
       },
       {
