@@ -69,9 +69,16 @@ WSGI_APPLICATION = "baseapp.wsgi.application"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'freedb_ecom_grocy',
+        'USER': 'freedb_ecom_grocy_owner',
+        'PASSWORD': '7Ud@422xURAxBmu',
+        'HOST': 'sql.freedb.tech', 
+        'PORT': '3306',
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+        },
     }
 }
 
@@ -107,16 +114,15 @@ USE_I18N = True
 USE_TZ = True
 
 
-# static files configured...//
+# static files
 STATIC_URL = "static/"
-STATICFILES_DIRS = [
-    BASE_DIR / "static"
-]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]  # Wrap the path in a list
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
-# media fiels configured...//
+# media files
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
 
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
