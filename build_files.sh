@@ -6,7 +6,7 @@
 set -e
 
 # Install Python dependencies
-pip install -r requirements.txt
+pip install -r requirments.txt
 
 # Collect static files
 python manage.py collectstatic --noinput
