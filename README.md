@@ -1,5 +1,7 @@
 Hello there. I made this project for my learning purpose. i made some mistakes but this project works.
 
+https://github.com/GITCODE-AW/Grocy/assets/99113986/39e6de4e-0d97-4009-b00c-b7679215fa03
+
 Completed Features
   1. Cart
   2. Seller Panel
@@ -14,6 +16,7 @@ Please feel free to Update, Add, Modify existing code. that would be great.
 incomplete features
   1. Order Section
   2. Seller Panel
+
 
 Header design is referred from CyberWarrior Channel. But it is totally recreated. Not Copied.
 Note - Every Component of this project is manually written not copied from anywhere.
